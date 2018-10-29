@@ -16,14 +16,27 @@ Includes:
 
 ## Usage
 
+### Run
+
+CLI:
+
+```
+docker run -d thomseddon/utils:latest
+```
+
 Compose:
 
 ```
   utils:
     image: thomseddon/utils:latest
-    command: /bin/bash -c "sleep 9999999"
     networks:
      - deep_down_network
+```
+
+### Join
+
+```
+docker exec -it $(docker ps | grep thomseddon/utils | cut -d' ' -f 1) /bin/bash
 ```
 
 ## Copyright

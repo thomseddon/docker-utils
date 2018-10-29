@@ -10,3 +10,5 @@ RUN apt-get update \
   net-tools \
   telnet \
   && rm -rf /var/lib/apt/lists/*
+
+CMD ["/bin/bash", "-c", "sleep infinity"]
