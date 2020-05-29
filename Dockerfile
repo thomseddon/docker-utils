@@ -9,6 +9,7 @@ RUN apt-get update \
   nmap \
   net-tools \
   telnet \
+  tcpdump \
   && rm -rf /var/lib/apt/lists/*
 
 CMD ["/bin/bash", "-c", "sleep infinity"]

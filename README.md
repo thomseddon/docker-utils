@@ -12,6 +12,7 @@ Includes:
 * netcat
 * nmap
 * telnet
+* tcpdump
 * traceroute
 
 ## Usage
